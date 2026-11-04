@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós — EducaSoul</title>
+<meta name="description" content="Conheça a história, o objetivo e a missão, visão e valores da EducaSoul — soluções educacionais para quem quer evoluir com consciência.">
+<link rel="icon" type="image/png" href="assets/educasoul-book-brown.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&family=Libre+Franklin:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .historia { padding: 20px 0 80px; }
+  .historia .split .media { position: relative; }
+  .historia .split .media::after {
+    content: ""; position: absolute; inset: 16px -16px -16px 16px;
+    border: 2px solid var(--sage); border-radius: 34px; z-index: -1;
+  }
+  .objetivo-band { padding: 0 0 80px; }
+  .objetivo-inner {
+    background: linear-gradient(160deg, var(--sage-soft), var(--sage));
+    border-radius: var(--radius); padding: clamp(36px, 5vw, 64px);
+    display: grid; grid-template-columns: auto 1fr; gap: 34px; align-items: center;
+  }
+  .objetivo-inner .ic {
+    width: 84px; height: 84px; border-radius: 24px; background: rgba(255,253,247,.8);
+    display: grid; place-items: center; color: var(--brown);
+  }
+  .objetivo-inner .ic svg { width: 40px; height: 40px; }
+  .objetivo-inner h2 { margin-bottom: 10px; }
+  .objetivo-inner p { color: var(--brown-2); max-width: 68ch; font-size: 1.05rem; }
+  .mvv { padding: 0 0 90px; }
+  .mvv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+  .mvv-card {
+    background: var(--paper); border: 1px solid rgba(62,36,18,.08);
+    border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow-1);
+  }
+  .mvv-card .ic {
+    width: 52px; height: 52px; border-radius: 16px; background: var(--sage-pale);
+    display: grid; place-items: center; color: var(--brown-2); margin-bottom: 18px;
+  }
+  .mvv-card .ic svg { width: 26px; height: 26px; }
+  .mvv-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+  .mvv-card p, .mvv-card li { font-size: .93rem; color: var(--brown-2); }
+  .mvv-card ul { list-style: none; display: grid; gap: 9px; }
+  .mvv-card li { display: flex; gap: 9px; align-items: flex-start; }
+  .mvv-card li svg { width: 16px; height: 16px; color: var(--sage); flex: none; margin-top: 4px; }
+  @media (max-width: 1020px) {
+    .mvv-grid { grid-template-columns: 1fr; }
+    .objetivo-inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="EducaSoul — página inicial">
+      <img src="assets/educasoul-logo.png" alt="EducaSoul — soluções educacionais">
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html" class="active">Sobre Nós</a></li>
+        <li><a href="index.html#ecossistema">Ecossistema</a></li>
+        <li><a href="index.html#consultoras">Consultoras</a></li>
+        <li class="nav-cta">
+          <a class="btn btn-solid" href="#contato">Fale conosco
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div>
+      <nav class="crumb" aria-label="Você está em">
+        <a href="index.html">Início</a> <span>›</span> <span>Sobre Nós</span>
+      </nav>
+      <span class="eyebrow">sobre nós</span>
+      <h1 class="h-display">Uma casa de<br>soluções educacionais.</h1>
+      <p class="lead">Somos a EducaSoul: gente de educação criando produtos, programas e consultorias para quem quer evoluir com consciência.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="index.html#ecossistema">Ver o ecossistema
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="media reveal">
+      <img src="assets/hero-livros.jpg" alt="Educadora segurando livros com o selo EducaSoul" style="aspect-ratio:4/4.2;">
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="historia">
+  <div class="container split">
+    <div class="media reveal">
+      <img src="assets/consultoras-reuniao.jpg" alt="Equipe EducaSoul reunida em formação" style="aspect-ratio:4/4.4;">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">nossa história</span>
+      <h2 class="h-sec">Nascemos dentro da escola — e nunca saímos dela.</h2>
+      <p style="color:var(--brown-2); margin-bottom:14px;">A EducaSoul nasceu da vivência de quem passou anos entre salas de aula, coordenações pedagógicas e secretarias de educação. Vimos de perto escolas cheias de potencial travadas por documentos engavetados, sistemas frios e formações distantes da prática.</p>
+      <p style="color:var(--brown-2); margin-bottom:14px;">Decidimos construir o que faltava: soluções que respeitam a realidade de cada escola e transformam a experiência de educadores em método aplicável. Assim surgiu um ecossistema completo — do Projeto Político-Pedagógico à gestão, da formação de líderes à criação de metodologias autorais.</p>
+      <p style="color:var(--brown-2);">Hoje, caminhamos com escolas, redes de ensino e especialistas por todo o Brasil, sempre com o mesmo jeito: proximidade humana, escuta e método.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETIVO -->
+<section class="objetivo-band">
+  <div class="container">
+    <div class="objetivo-inner reveal">
+      <span class="ic">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      </span>
+      <div>
+        <span class="eyebrow" style="color:var(--brown-2);">nosso objetivo</span>
+        <h2 class="h-sec">Guiar o educador moderno a transformar vivência em impacto.</h2>
+        <p>Oferecemos recursos formativos que unem experiência, aplicabilidade e propósito — para que escolas e educadores transformem o que já sabem em resultados reais, com método e significado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSÃO / VISÃO / VALORES -->
+<section class="mvv">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">nossos pilares</span>
+      <h2 class="h-sec">Missão, Visão e Valores</h2>
+    </div>
+    <div class="mvv-grid">
+      <div class="mvv-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        <h3>Missão</h3>
+        <p>Transformar conhecimento em método — e método em crescimento — com soluções educacionais que respeitam a realidade de cada escola e de cada educador.</p>
+      </div>
+      <div class="mvv-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3>Visão</h3>
+        <p>Ser referência nacional em soluções educacionais integradas, reconhecida por unir alma, método e resultado — evolução com consciência em cada projeto.</p>
+      </div>
+      <div class="mvv-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></span>
+        <h3>Valores</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Consciência e propósito</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Método e aplicabilidade</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Proximidade humana</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Excelência com leveza</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Educação que respeita pessoas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <img class="watermark" src="assets/educasoul-book-cream.png" alt="" aria-hidden="true">
+      <h2 class="h-sec">Quer conhecer nossas soluções?</h2>
+      <p>Explore o ecossistema EducaSoul e descubra qual caminho faz sentido para a sua escola ou projeto.</p>
+      <a class="btn btn-sage" href="index.html#ecossistema">Explorar o ecossistema
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="contato">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/educasoul-logo-sage.png" alt="EducaSoul — soluções educacionais">
+        <p>Soluções educacionais para quem quer evoluir com consciência.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5v12H3.56v-12h3.38zM5.25 3a1.97 1.97 0 110 3.94 1.97 1.97 0 010-3.94zM20.5 13.9v6.6h-3.37v-6.2c0-1.56-.56-2.62-1.96-2.62-1.07 0-1.7.72-1.98 1.41-.1.25-.13.6-.13.94v6.47H9.69s.05-10.5 0-11.59h3.37v1.64c.45-.69 1.25-1.68 3.04-1.68 2.22 0 3.9 1.45 3.9 4.57z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.85-.49-5.7a2.98 2.98 0 00-2.1-2.1C18.56 3.7 12 3.7 12 3.7s-6.56 0-8.41.5a2.98 2.98 0 00-2.1 2.1C1 8.15 1 12 1 12s0 3.85.49 5.7c.27 1.02 1.08 1.83 2.1 2.1 1.85.5 8.41.5 8.41.5s6.56 0 8.41-.5a2.98 2.98 0 002.1-2.1C23 15.85 23 12 23 12zM9.75 8.85l5.75 3.15-5.75 3.15v-6.3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.97L2 22l5.18-1.5A9.9 9.9 0 1012.04 2zm5.77 14.13c-.24.68-1.4 1.3-1.93 1.35-.52.05-1.01.24-3.4-.7-2.87-1.13-4.7-4.06-4.84-4.25-.14-.19-1.16-1.55-1.16-2.95 0-1.4.73-2.09 1-2.38.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.8 1.97.87 2.11.07.14.12.31.02.5-.09.19-.14.3-.28.47l-.43.5c-.14.14-.29.3-.12.58.16.29.73 1.2 1.56 1.95 1.08.96 1.98 1.26 2.27 1.4.28.14.45.12.62-.07.16-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.92.29.14.48.22.55.34.07.12.07.68-.17 1.33z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Ecossistema</h5>
+        <ul>
+          <li><a href="ppp-na-pratica.html">PPP na Prática</a></li>
+          <li><a href="fenix.html">Fênix</a></li>
+          <li><a href="sigedflow.html">SigedFlow</a></li>
+          <li><a href="edumind.html">EduMind</a></li>
+          <li><a href="metodologia.html">Criação de Metodologia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="index.html#consultoras">Consultoras</a></li>
+          <li><a href="index.html#ecossistema">Nossas soluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <span>contato@educasoul.com.br</span>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+55 (47) 12345-6789</span>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Santa Catarina, Brasil</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> EducaSoul — Soluções Educacionais. Todos os direitos reservados.</span>
+      <span>Protótipo para apresentação · conteúdo ilustrativo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

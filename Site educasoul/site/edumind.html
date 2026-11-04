@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduMind — EducaSoul</title>
+<meta name="description" content="EduMind Experience: imersão que transforma conhecimento em método, intuição em estrutura e experiência em algo replicável. Aprender não é acumular — é conectar pontos.">
+<link rel="icon" type="image/png" href="assets/educasoul-book-brown.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  body { background: var(--em-deep); }
+  .em-hero { position: relative; overflow: hidden; }
+  .em-hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(55% 70% at 90% 10%, rgba(240,255,108,.12), transparent 65%),
+      radial-gradient(60% 80% at 5% 95%, rgba(119,32,243,.5), transparent 70%);
+    pointer-events: none;
+  }
+  .em-spark {
+    position: absolute; width: 10px; height: 10px; border-radius: 50%;
+    background: var(--em-yellow); box-shadow: 0 0 18px 4px rgba(240,255,108,.55);
+    animation: floaty 5s ease-in-out infinite;
+  }
+  .em-media { position: relative; }
+  .em-media img { border-radius: 30px; box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+  .em-media::after {
+    content: ""; position: absolute; inset: 0; border-radius: 30px;
+    background: linear-gradient(200deg, rgba(64,16,128,0) 55%, rgba(64,16,128,.55));
+  }
+</style>
+</head>
+<body class="theme-edumind">
+
+<header class="site-header header-purple header-dark">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="EducaSoul — página inicial">
+      <img src="assets/educasoul-logo-sage.png" alt="EducaSoul — soluções educacionais">
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="index.html#ecossistema" class="active">Ecossistema</a></li>
+        <li><a href="index.html#consultoras">Consultoras</a></li>
+        <li class="nav-cta">
+          <a class="btn btn-brand" href="#contato">Fale conosco
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="page-hero em-hero">
+  <span class="em-spark" style="top:18%; left:55%;"></span>
+  <span class="em-spark" style="top:64%; left:8%; animation-delay:1.2s;"></span>
+  <span class="em-spark" style="top:30%; right:6%; animation-delay:2.1s;"></span>
+  <div class="container">
+    <div>
+      <nav class="crumb" aria-label="Você está em">
+        <a href="index.html">Início</a> <span>›</span> <a href="index.html#ecossistema">Ecossistema</a> <span>›</span> <span>EduMind</span>
+      </nav>
+      <span class="eyebrow">experiência & imersão</span>
+      <h1 class="h-display">Aprender não é acumular.<br><span class="yellow-text">É conectar pontos.</span></h1>
+      <p class="lead">O EduMind Experience é uma imersão para transformar conhecimento em método, intuição em estrutura e experiência em algo replicável.</p>
+      <div class="hero-actions">
+        <a class="btn btn-brand" href="#experiencia">Viver a experiência
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#contato">Próximas turmas</a>
+      </div>
+    </div>
+    <div class="media reveal">
+      <img src="assets/edumind-card.png" alt="Logotipo edumind sobre fundo roxo profundo">
+    </div>
+  </div>
+</section>
+
+<!-- ESSÊNCIA -->
+<section class="section" id="essencia">
+  <div class="container split">
+    <div class="em-media reveal">
+      <img src="assets/edumind-rede.jpg" alt="Rede de pontos conectados por linhas de luz" style="aspect-ratio:16/11; object-fit:cover; width:100%;">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">essência da marca</span>
+      <h2 class="h-sec">O spark da mente: o momento <span class="yellow-text">“clique”</span>.</h2>
+      <p style="opacity:.88; margin-bottom:14px;">O EduMind acredita que o maior ativo de uma pessoa não é o que ela sabe — é o quanto ela consegue organizar, conectar e aplicar o que sabe.</p>
+      <p style="opacity:.88; margin-bottom:14px;">A imersão atua no nível da consciência e da estrutura mental: um espaço onde ideias deixam de ser soltas e passam a ter forma, lógica e direção.</p>
+      <p style="opacity:.88;">Porque saber muito não é suficiente. É preciso saber organizar o que se sabe — e transformar estrutura em crescimento.</p>
+      <ul class="check-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Conhecimento → método</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Intuição → estrutura</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Experiência → algo replicável</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- A EXPERIÊNCIA -->
+<section class="section" id="experiencia" style="padding-top:0;">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">o que você vive</span>
+      <h2 class="h-sec">Uma jornada em quatro movimentos.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h4>Palestras-experiência</h4>
+        <p>Conteúdo quase acadêmico com estética contemporânea — profundidade sem peso.</p>
+      </div>
+      <div class="step reveal">
+        <h4>Oficinas de estruturação</h4>
+        <p>Mão na massa para mapear, organizar e conectar o que você já sabe.</p>
+      </div>
+      <div class="step reveal">
+        <h4>Conexões reais</h4>
+        <p>Networking com educadores e especialistas que pensam como você.</p>
+      </div>
+      <div class="step reveal">
+        <h4>Plano de aplicação</h4>
+        <p>Você sai com o seu conhecimento estruturado em um plano pronto para rodar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">para quem é</span>
+      <h2 class="h-sec">Feito para mentes inquietas.</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></span>
+        <h4>Educadores</h4>
+        <p>Que querem transformar anos de sala de aula em método próprio.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></span>
+        <h4>Coordenações e gestão</h4>
+        <p>Que precisam estruturar processos formativos dentro da escola.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+        <h4>Criadores de conteúdo</h4>
+        <p>Que querem dar forma e lógica ao que produzem sobre educação.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+        <h4>Especialistas</h4>
+        <p>Que dominam um tema e querem transformá-lo em produto educacional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-band section" style="padding-top:0;">
+  <div class="container">
+    <div class="quote-inner reveal">
+      <blockquote>“Aqui, aprender não é acumular. É conectar pontos.”</blockquote>
+      <cite>EduMind Experience</cite>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0;">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <h2 class="h-sec">Pronto para o seu momento <span class="yellow-text">“clique”</span>?</h2>
+      <p class="lead" style="margin:0 auto 30px;">Garanta seu lugar na próxima edição do EduMind Experience.</p>
+      <a class="btn btn-brand" href="#contato">Quero participar
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="contato">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/educasoul-logo-sage.png" alt="EducaSoul — soluções educacionais">
+        <p>Soluções educacionais para quem quer evoluir com consciência.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5v12H3.56v-12h3.38zM5.25 3a1.97 1.97 0 110 3.94 1.97 1.97 0 010-3.94zM20.5 13.9v6.6h-3.37v-6.2c0-1.56-.56-2.62-1.96-2.62-1.07 0-1.7.72-1.98 1.41-.1.25-.13.6-.13.94v6.47H9.69s.05-10.5 0-11.59h3.37v1.64c.45-.69 1.25-1.68 3.04-1.68 2.22 0 3.9 1.45 3.9 4.57z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.85-.49-5.7a2.98 2.98 0 00-2.1-2.1C18.56 3.7 12 3.7 12 3.7s-6.56 0-8.41.5a2.98 2.98 0 00-2.1 2.1C1 8.15 1 12 1 12s0 3.85.49 5.7c.27 1.02 1.08 1.83 2.1 2.1 1.85.5 8.41.5 8.41.5s6.56 0 8.41-.5a2.98 2.98 0 002.1-2.1C23 15.85 23 12 23 12zM9.75 8.85l5.75 3.15-5.75 3.15v-6.3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.97L2 22l5.18-1.5A9.9 9.9 0 1012.04 2zm5.77 14.13c-.24.68-1.4 1.3-1.93 1.35-.52.05-1.01.24-3.4-.7-2.87-1.13-4.7-4.06-4.84-4.25-.14-.19-1.16-1.55-1.16-2.95 0-1.4.73-2.09 1-2.38.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.24.57.8 1.97.87 2.11.07.14.12.31.02.5-.09.19-.14.3-.28.47l-.43.5c-.14.14-.29.3-.12.58.16.29.73 1.2 1.56 1.95 1.08.96 1.98 1.26 2.27 1.4.28.14.45.12.62-.07.16-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.92.29.14.48.22.55.34.07.12.07.68-.17 1.33z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Ecossistema</h5>
+        <ul>
+          <li><a href="ppp-na-pratica.html">PPP na Prática</a></li>
+          <li><a href="fenix.html">Fênix</a></li>
+          <li><a href="sigedflow.html">SigedFlow</a></li>
+          <li><a href="edumind.html">EduMind</a></li>
+          <li><a href="metodologia.html">Criação de Metodologia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="index.html#consultoras">Consultoras</a></li>
+          <li><a href="index.html#ecossistema">Nossas soluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <span>contato@educasoul.com.br</span>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+55 (47) 12345-6789</span>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Santa Catarina, Brasil</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> EducaSoul — Soluções Educacionais. Todos os direitos reservados.</span>
+      <span>Protótipo para apresentação · conteúdo ilustrativo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import fitz\")",
+      "Bash(py --version)",
+      "Bash(where python *)",
+      "Bash(npm --version)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\logos\" | ForEach-Object { $_.FullName + \"  [\" + $_.Length + \" bytes]\" })",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\pdfextract.ps1\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\pdfx\" | Sort-Object Name | ForEach-Object { $_.Name + \"  [\" + [math]::Round\\($_.Length/1KB\\) + \" KB]\" })",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\pdfrender.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\sample_colors.ps1\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; foreach \\($f in @\\('marca dagua 01.png','MARCA DAGUA 04.png','MARCA DAGUA 07.png','MARCA DAGUA 5 .png'\\)\\) { $p = Join-Path 'C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\logos' $f; $b = [System.Drawing.Bitmap]::FromFile\\($p\\); $c = $b.GetPixel\\(5,5\\); Write-Output \\(\"$f  \" + $b.Width + \"x\" + $b.Height + \"  format=\" + $b.PixelFormat + \"  corner A=\" + $c.A + \" R=\" + $c.R\\); $b.Dispose\\(\\) })",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\prep_assets.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\logo_sage.ps1\")",
+      "PowerShell($edge = @\\(\"$env:ProgramFiles \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\", \"$env:ProgramFiles\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\", \"${env:ProgramFiles\\(x86\\)}\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"\\) | Where-Object { Test-Path $_ } | Select-Object -First 1; if \\($edge\\) { Write-Output \"EDGE: $edge\" } else { Write-Output \"EDGE NOT FOUND\" })",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\shots.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\recrop_siged.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\recrop_siged2.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\shots2.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\shots3.ps1\")",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\guiha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-guiha-Desktop-Site-educasoul\\\\f7b9407f-8fa0-4cb4-a212-376da0ae03b5\\\\scratchpad\\\\crop_mobile.ps1\")",
+      "PowerShell(Add-Type -AssemblyName System.IO.Compression.FileSystem; $z = [System.IO.Compression.ZipFile]::OpenRead\\(\"c:\\\\Users\\\\guiha\\\\Desktop\\\\Site educasoul\\\\Nada de mais\\\\educasoul-site-netlify.zip\"\\); $z.Entries | Select-Object -ExpandProperty FullName; $z.Dispose\\(\\))"
+    ]
+  }
+}
