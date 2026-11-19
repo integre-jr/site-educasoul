@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 920" role="img" aria-label="Seis degraus dourados em ascensão sobre um documento: os seis passos do PPP na Prática">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18222c"/>
+      <stop offset="1" stop-color="#0b1117"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBD59B"/>
+      <stop offset=".5" stop-color="#D2B060"/>
+      <stop offset="1" stop-color="#A8842C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".16" r=".6">
+      <stop offset="0" stop-color="#D2B060" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#D2B060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="920" fill="url(#bg)"/>
+  <rect width="800" height="920" fill="url(#glow)"/>
+
+  <!-- documento ao fundo -->
+  <g transform="rotate(-6 250 560)" opacity=".9">
+    <rect x="90" y="300" width="360" height="470" rx="18" fill="#E9E8E0" fill-opacity=".07" stroke="#E9E8E0" stroke-opacity=".18" stroke-width="2"/>
+    <g stroke="#E9E8E0" stroke-opacity=".22" stroke-width="6" stroke-linecap="round">
+      <line x1="130" y1="360" x2="320" y2="360"/>
+      <line x1="130" y1="408" x2="410" y2="408"/>
+      <line x1="130" y1="446" x2="395" y2="446"/>
+      <line x1="130" y1="484" x2="410" y2="484"/>
+      <line x1="130" y1="522" x2="350" y2="522"/>
+    </g>
+  </g>
+
+  <!-- degraus: seis passos -->
+  <g fill="url(#gold)">
+    <rect x="150" y="690" width="82" height="120" rx="12"/>
+    <rect x="248" y="620" width="82" height="190" rx="12"/>
+    <rect x="346" y="540" width="82" height="270" rx="12"/>
+    <rect x="444" y="450" width="82" height="360" rx="12"/>
+    <rect x="542" y="350" width="82" height="460" rx="12"/>
+    <rect x="640" y="240" width="82" height="570" rx="12"/>
+  </g>
+  <g fill="#101820" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="34" text-anchor="middle">
+    <text x="191" y="740">1</text>
+    <text x="289" y="670">2</text>
+    <text x="387" y="590">3</text>
+    <text x="485" y="500">4</text>
+    <text x="583" y="400">5</text>
+    <text x="681" y="290">6</text>
+  </g>
+
+  <!-- trilha pontilhada até o topo -->
+  <path d="M191 662 C 250 600, 330 560, 387 510 S 520 410, 583 322 S 650 200, 681 176"
+        fill="none" stroke="#EBD59B" stroke-opacity=".75" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+
+  <!-- estrela de orientação no topo -->
+  <g transform="translate(681 128)">
+    <circle r="44" fill="none" stroke="#D2B060" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M0 -34 L8 -8 L34 0 L8 8 L0 34 L-8 8 L-34 0 L-8 -8 Z" fill="url(#gold)"/>
+  </g>
+
+  <!-- linha de base -->
+  <line x1="110" y1="810" x2="740" y2="810" stroke="#E9E8E0" stroke-opacity=".25" stroke-width="2"/>
+</svg>
