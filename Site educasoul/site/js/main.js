@@ -6,8 +6,10 @@
 const CONFIG = {
   email: 'atendimento@educasoul.com',
   whatsapp: '5547988688335',               // (47) 98868-8335, só dígitos com DDI
-  // Envio por e-mail via FormSubmit (gratuito). Na 1ª mensagem, o FormSubmit manda um
-  // e-mail de ativação para o endereço acima — alguém precisa clicar em "Activate".
+  // Envio por e-mail via FormSubmit (gratuito, sem conta nem chave). Na 1ª mensagem, o FormSubmit
+  // manda um e-mail de ativação para o endereço acima — alguém precisa clicar em "Activate".
+  // Depois da ativação, dá para trocar o e-mail da URL pelo código aleatório que vem no e-mail de
+  // confirmação (formsubmit.co/ajax/<código>), para o endereço não ficar exposto no código do site.
   emailEndpoint: 'https://formsubmit.co/ajax/atendimento@educasoul.com',
   // TODO-CLIENTE: links da Hotmart. Enquanto vazios, os botões mantêm o link de fallback do HTML.
   links: {
@@ -229,7 +231,8 @@ function buildForm(form, tipo, preset) {
     ).join('') +
     `<div class="form-actions"><button class="btn btn-solid btn-brand" type="submit">${esc(def.submit)}</button>
      <span class="form-hint">Ao enviar, abriremos o WhatsApp com sua mensagem pronta — é só tocar em enviar.</span></div>
-     <div class="form-status" role="status"></div>`;
+     <div class="form-status" role="status"></div>
+     <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">`;
   form.addEventListener('submit', e => submitForm(e, form));
 }
 
@@ -237,7 +240,13 @@ function submitForm(e, form) {
   e.preventDefault();
   const data = new FormData(form);
   const lines = [];
+  // armadilha anti-spam: campo invisível que só robô preenche
+  if (data.get('_honey')) return;
+  data.delete('_honey');
   const payload = { _subject: `Site Educasoul — ${form.dataset.title}`, _template: 'table', _captcha: 'false' };
+  // "Responder" no e-mail recebido vai direto para quem preencheu o formulário
+  const emailField = form.querySelector('input[type="email"]');
+  if (emailField && emailField.value) payload._replyto = emailField.value;
   for (const key of new Set(data.keys())) {
     const val = data.getAll(key).filter(Boolean).join(', ');
     if (!val) continue;
@@ -259,9 +268,13 @@ function submitForm(e, form) {
       method: 'POST', keepalive: true,
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify(payload),
-    }).catch(() => {
-      status.innerHTML += `<br>Não conseguimos enviar o e-mail automaticamente. Se preferir, escreva para <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>.`;
-    });
+    })
+      // o FormSubmit responde 200 com success "false" quando falha (ex.: e-mail ainda não ativado)
+      .then(r => r.json())
+      .then(j => { if (String(j.success) !== 'true') throw new Error(j.message); })
+      .catch(() => {
+        status.innerHTML += `<br>Não conseguimos enviar o e-mail automaticamente. Se preferir, escreva para <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>.`;
+      });
   }
 }
 
